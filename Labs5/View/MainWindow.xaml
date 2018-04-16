@@ -1,0 +1,21 @@
+﻿<Window x:Class="Labs5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Labs5"
+        mc:Ignorable="d"
+        Title="ArithmeticCompress" Height="350" Width="525"
+        DataContext="{Binding Main, Source={StaticResource Locator}}">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.4" Color="Silver"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+        </Grid.Background>
+        <ContentPresenter Content="{Binding CurrentViewModel}" />
+    </Grid>
+</Window>
